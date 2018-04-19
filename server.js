@@ -17,11 +17,11 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/burgers_controllers");
+var router = require("./controllers/burgers_controllers");
 
-app.use(routes);
-app.use("/update", routes);
-app.use("/create", routes);
+app.use("/", router);
+app.use("/update", router);
+app.use("/create", router);
 
 
 // listen on port 3000
