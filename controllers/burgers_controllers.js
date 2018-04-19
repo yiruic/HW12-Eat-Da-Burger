@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
 });
 
 //Devour a burger
-router.put("/update", function(req, res) {
+router.put("/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
     burger.update({ devoured: req.body.devoured }, condition, function() {
