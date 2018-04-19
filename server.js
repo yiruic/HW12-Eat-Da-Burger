@@ -19,9 +19,9 @@ app.set("view engine", "handlebars");
 
 var router = require("./controllers/burgers_controllers");
 
-app.use("/", router.get());
-app.use("/update", router.put());
-app.use("/create", router.post());
+app.use("/", router);
+app.use("/update", router);
+app.use("/create", router);
 
 
 // listen on port 3000
