@@ -34,4 +34,4 @@ db.sequelize.sync().then(function() {
 });
 
 
-console.log(module.exports);
+// console.log(module.exports);
